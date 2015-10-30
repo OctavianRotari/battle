@@ -1,4 +1,12 @@
+require 'forwardable'
+
 class Game
+extend Forwardable
+
+  def_delegator :player_1, :name, :player1_name
+  def_delegator :player_2, :name, :player2_name
+  def_delegator :player_1, :hitpoints, :player1_hitpoints
+  def_delegator :player_2, :hitpoints, :player2_hitpoints
 
   attr_reader :player_1, :player_2
 
