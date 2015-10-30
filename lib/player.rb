@@ -8,10 +8,6 @@ class Player
     @hitpoints = DEFAULT_HP
   end
 
-  def attack(player)
-    player.receive_attack
-  end
-
   def receive_attack
     @hitpoints -= 10
   end
