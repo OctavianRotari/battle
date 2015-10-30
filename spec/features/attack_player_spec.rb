@@ -13,4 +13,5 @@ feature 'Attack another player' do
     click_button('Continue to battle')
     expect(page).to have_content('Spiderman: 50/60HP')
   end
+
 end
