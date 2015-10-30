@@ -1,2 +1,7 @@
-<%= @player_1_name %> vs <%= @player_2_name %>
-<%= @player_2_name %>: 60/60HP
+<div style="text-align: center">
+  <h1> <%= @player_1_name %> vs <%= @player_2_name %> </h1>
+  <p><%= @player_2_name %>: 60/60HP </p>
+  <form action="/attack" method="get">
+    <input type="submit" value="Attack">
+  </form>
+</div>
